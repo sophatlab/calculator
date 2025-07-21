@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@property --tw-gradient-from {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #0000;
+}
+
+.container {
+    @apply max-w-96 mx-auto p-6 border border-slate-300 bg-slate-100 drop-shadow rounded-2xl mt-10;
+}
+
+.button {
+    @apply bg-white py-2 transition-all cursor-pointer rounded-xl ring-sky-50 hover:bg-slate-100 drop-shadow;
+}
+
+.button.active {
+    @apply bg-sky-500 text-white;
+}
+
+.group-result {
+    @apply mt-5 overflow-hidden rounded-2xl shadow inset-0;
+}
+.history {
+    @apply w-full px-4 bg-slate-50 border-sky-500 py-1 text-sm font-medium text-right outline-none placeholder:text-slate-400;
+}
+.result {
+    @apply w-full px-4 bg-slate-50 border-sky-500 py-1 placeholder:text-black text-2xl font-bold text-right outline-none;
+}
